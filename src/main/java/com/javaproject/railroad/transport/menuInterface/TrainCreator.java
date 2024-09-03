@@ -31,7 +31,10 @@ public class TrainCreator {
                 return new PassengerTrain();
             }
             case 2 -> {
-                return new CargoTrain();
+                System.out.println("Cargo trains creation not implemented yet. Follow feature updates!");
+                System.out.println("Exiting the program...");
+                sc.close();
+                System.exit(0);
             }
             case 3 -> {
                 System.out.println("Exiting the program...");

@@ -109,7 +109,7 @@ public class PassengerTrainCreator {
     }
 
     public void addLocomotive () {
-        out.println("What type of train do you want to create?");
+        out.println("What type of train do you want to create? Enter name of the locomotive");
         for (LocomotivesTypes locomotivesTypes : LocomotivesTypes.values()) {
             System.out.println("Model: " + locomotivesTypes.name() + ", MaxCapacity: " + locomotivesTypes.getLoadCapacityInTons());
         }
@@ -124,7 +124,7 @@ public class PassengerTrainCreator {
     }
 
     public void addWagon () {
-        out.println("What type of wagon do you want to add? Type name of wagon");
+        out.println("What type of wagon do you want to add? Type name of wagon. Enter name of the locomotive");
         for (PassengerWagonsTypes passengerWagonsTypes : PassengerWagonsTypes.values()) {
             System.out.println("Type: " + passengerWagonsTypes.name() + ", "
                     + " Number of passengers: " + passengerWagonsTypes.getNumberOfPassengers()+ ", "
